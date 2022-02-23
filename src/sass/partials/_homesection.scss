@@ -1,0 +1,83 @@
+.profile-picture {
+	width: 500px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.home-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 90vh;
+	padding: 50px;
+}
+.home-text-content {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	max-width: 500px;
+	p {
+		font-family: $secondary-font;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-top: 100px;
+		padding-bottom: 10px;
+	}
+	h1 {
+		font-family: $primary-font;
+		font-weight: 600;
+		font-size: 64px;
+	}
+	.download-btn {
+		margin-top: 150px;
+		width: 220px;
+		color: $button-color;
+		background: transparent;
+		padding: 15px;
+		border: 2px solid $button-color;
+		border-radius: 15px 0 15px 0;
+		cursor: pointer;
+		font-family: $primary-font;
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 200px;
+		&:hover {
+			color: $primary-background-color;
+			background-color: $button-color;
+		}
+	}
+}
+//Media query
+
+@media (max-width: 1099px) {
+	.home-text-content {
+		margin-top: 20px;
+		p {
+			padding-top: 0;
+		}
+		button {
+			margin-top: 40px;
+			margin-bottom: 50px;
+		}
+	}
+	.profile-picture {
+		width: 300px;
+	}
+}
+@media (max-width: 800px) {
+	.profile-picture {
+		width: 200px;
+	}
+}
+@media (max-width: 700px) {
+	.profile-picture {
+		display: none;
+	}
+}
+@media (max-width: 320px) {
+	.home-text-content {
+		h1 {
+			font-size: 36px;
+		}
+	}
+}
